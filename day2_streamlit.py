@@ -12,7 +12,7 @@ else:
     # ALSO ADD HERE YOUR PROXY VARS
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.environ["MY_HF_API_TOKEN"]
 
-st.title("my gen AI app")
+st.title("Ela, I'm your personal chatGPT, you can ask me everything...")
 repo_id = "microsoft/Phi-3-mini-4k-instruct"
 temp = 1
 print(repo_id, temp)
