@@ -21,7 +21,7 @@ logger.info(f"{temp=}")
 with st.form("sample_app"):
     txt = st.text_area("Enter text:", "what GPT stands for?")
     age = st.slider("How old are you?", 0, 130, 25)
-    st.write("I'm ", age, "years old")
+    #st.write("I'm ", age, "years old")
     #my_slide = st.slider("Temp", min_value=0, max_value=2, value=1, step=0.1, format="%0.1f", key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
     sub = st.form_submit_button("submit")
     if sub:
