@@ -20,7 +20,7 @@ logger.info(f"{temp=}")
 
 with st.form("sample_app"):
     txt = st.text_area("Enter text:", "what GPT stands for?")
-    st.slider(Temp, min_value=0, max_value=2, value=1, step=0.1, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
+    my_slide = st.slider(Temp, min_value=0, max_value=2, value=1, step=0.1, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False, label_visibility="visible")
     sub = st.form_submit_button("submit")
     if sub:
         llm = HuggingFaceEndpoint(
