@@ -6,8 +6,6 @@ logger = get_logger(__name__)
 
 import os
 if os.getenv('USER', "None") == 'appuser': # streamlit
-    logger.info("In appuser")
-    logger.info("HF_TOKEN = ", HF_TOKEN)
     hf_token = st.secrets['HF_TOKEN']
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = hf_token
 else:
